@@ -1,31 +1,33 @@
-source "https://rubygems.org"
+# frozen_string_literal: true
 
-ruby "3.1.2"
+source 'https://rubygems.org'
 
-gem "rails", "~> 7.1.2"
-gem "sprockets-rails"
+ruby '3.1.2'
 
-gem 'pg', '~> 1.5', '>= 1.5.4'
-gem "puma", ">= 5.0"
-gem "importmap-rails"
-gem "turbo-rails"
-gem "stimulus-rails"
-gem "jbuilder"
-gem "tzinfo-data", platforms: %i[ mswin mswin64 mingw x64_mingw jruby ]
-gem "bootsnap", require: false
+gem 'rails', '~> 7.1.2'
+gem 'sprockets-rails'
+
+gem 'bootsnap', require: false
 gem 'dotenv-rails'
+gem 'importmap-rails'
+gem 'jbuilder'
+gem 'pg', '~> 1.5', '>= 1.5.4'
+gem 'puma', '>= 5.0'
+gem 'stimulus-rails'
+gem 'turbo-rails'
+gem 'tzinfo-data', platforms: %i[mswin mswin64 mingw x64_mingw jruby]
 
 group :development, :test do
-  gem "debug", platforms: %i[ mri mswin mswin64 mingw x64_mingw ]
+  gem 'debug', platforms: %i[mri mswin mswin64 mingw x64_mingw]
   gem 'rubocop-rails', require: false
 end
 
 group :development do
-  gem "web-console"
-  gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
+  gem 'error_highlight', '>= 0.4.0', platforms: [:ruby]
+  gem 'web-console'
 end
 
 group :test do
-  gem "capybara"
-  gem "selenium-webdriver"
+  gem 'capybara'
+  gem 'selenium-webdriver'
 end
