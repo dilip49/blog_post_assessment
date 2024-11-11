@@ -7,8 +7,8 @@ ruby '3.1.2'
 gem 'rails', '~> 7.1.2'
 gem 'sprockets-rails'
 
-gem 'aws-sdk-s3', require: false
 gem 'active_storage_validations'
+gem 'aws-sdk-s3', require: false
 gem 'bootsnap', require: false
 gem 'devise'
 gem 'dotenv-rails'
@@ -24,8 +24,9 @@ gem 'tzinfo-data', platforms: %i[mswin mswin64 mingw x64_mingw jruby]
 
 group :development, :test do
   gem 'debug', platforms: %i[mri mswin mswin64 mingw x64_mingw]
-  gem 'rubocop-rails', require: false
   gem 'rspec-rails', '~> 7.0.0'
+  gem 'rubocop-rails', require: false
+  gem 'shoulda-matchers'
 end
 
 group :development do
