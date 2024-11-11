@@ -8,6 +8,7 @@ gem 'rails', '~> 7.1.2'
 gem 'sprockets-rails'
 
 gem 'aws-sdk-s3', require: false
+gem 'active_storage_validations'
 gem 'bootsnap', require: false
 gem 'devise'
 gem 'dotenv-rails'
