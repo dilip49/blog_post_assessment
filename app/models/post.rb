@@ -10,7 +10,7 @@ class Post < ApplicationRecord
   validates :title, :content, presence: true
 
   after_initialize :set_default_status, if: :new_record?
-  
+
   private
 
   def set_default_status
