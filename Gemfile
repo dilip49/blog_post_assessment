@@ -7,8 +7,12 @@ ruby '3.1.2'
 gem 'rails', '~> 7.1.2'
 gem 'sprockets-rails'
 
+gem 'aws-sdk-s3', require: false
 gem 'bootsnap', require: false
+gem 'devise'
 gem 'dotenv-rails'
+gem 'pundit'
+
 gem 'importmap-rails'
 gem 'jbuilder'
 gem 'pg', '~> 1.5', '>= 1.5.4'
