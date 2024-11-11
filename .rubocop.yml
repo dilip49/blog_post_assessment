@@ -1,0 +1,76 @@
+require: rubocop-rails
+
+AllCops:
+  TargetRubyVersion: '3.1.2'
+  Exclude:
+    - 'vendor/**/*'
+    - 'db/schema.rb'
+    - 'config/**/*'
+    - 'bin/*'
+    - 'test/**/*'
+    - 'app/channels/*'
+    - 'app/jobs/*'
+    - 'config.ru'
+Rails:
+  Enabled: true
+
+# Layout/Indentation:
+Layout/IndentationStyle:
+  EnforcedStyle: spaces
+  Exclude:
+    - 'db/schema.rb'
+
+# Layout/LineLength:
+Layout/LineLength:
+  Max: 120
+
+# Style/FrozenStringLiteralComment:
+Style/FrozenStringLiteralComment:
+  Enabled: true
+
+# Style/Documentation:
+Style/Documentation:
+  Enabled: false
+
+# Metrics/BlockLength:
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+  Max: 30
+
+# Metrics/MethodLength:
+Metrics/MethodLength:
+  Exclude:
+    - 'spec/**/*'
+  Max: 15
+
+Style/DoubleNegation:
+  Enabled: true
+Layout/SpaceAroundEqualsInParameterDefault:
+  Enabled: true
+Style/IdenticalConditionalBranches:
+  Enabled: true
+Layout/MultilineMethodCallIndentation:
+  Enabled: true
+Naming/ConstantName:
+  Enabled: true
+Style/CaseEquality:
+  Enabled: false
+Naming/MemoizedInstanceVariableName:
+  Enabled: true
+Lint/UselessAssignment:
+  Enabled: true
+Style/BlockComments:
+  Enabled: true
+Style/SymbolArray:
+  Enabled: true
+Style/WordArray:
+  Enabled: true
+Style/LineEndConcatenation:
+  Enabled: true
+Style/EachWithObject:
+  Enabled: false
+Style/OptionalBooleanParameter:
+  Enabled: false
+Style/StringConcatenation:
+  Enabled: true
