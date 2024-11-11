@@ -17,6 +17,7 @@ gem 'dotenv-rails'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mswin mswin64 mingw x64_mingw ]
+  gem 'rubocop-rails', require: false
 end
 
 group :development do
