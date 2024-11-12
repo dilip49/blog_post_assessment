@@ -21,6 +21,7 @@ gem 'puma', '>= 5.0'
 gem 'stimulus-rails'
 gem 'turbo-rails'
 gem 'tzinfo-data', platforms: %i[mswin mswin64 mingw x64_mingw jruby]
+gem 'haml-rails', '~> 2.0'
 
 group :development, :test do
   gem 'debug', platforms: %i[mri mswin mswin64 mingw x64_mingw]
@@ -37,4 +38,5 @@ end
 group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
+  gem 'factory_bot_rails'
 end
